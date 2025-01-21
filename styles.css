@@ -9,13 +9,11 @@ body {
 header {
     background: #333;
     color: white;
-    padding: 10px 0;
     text-align: center;
+    margin: 2vw;
 }
 
-main {
-    padding: 20px;
-}
+
 
 h1, h2 {
     color: #ff7c7c;
@@ -31,6 +29,22 @@ footer {
     width: 100%;
 }
 
+main{
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+
 a {
     color:#ffd7d7
+}
+
+.form-container {
+    background-color: #444; /* Цвет фона рамки */
+    border: 2px solid #ff7c7c; /* Цвет и толщина рамки */
+    border-radius: 5%; /* Закругление углов */
+    padding: 20px; /* Отступы внутри рамки */
+    margin: 20px auto; /* Центровка по вертикали и горизонтали */
+    width: 80%; /* Ширина рамки */
+    max-width: 25vw; /* Максимальная ширина */
+    min-width: 200px;
 }
