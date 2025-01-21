@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация на сайте о Таро</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>*Регистрация на расклад Таро*</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="main_window.html">Главная</a></li>
+            <li><a href="registration.html">Регистрация</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form action="#" method="post">
+            <label for="name">Имя:<span style="color: red;">*</span></label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Электронная почта:<span style="color: red;">*</span></label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="gender">Пол:</label><br>
+            <select id="gender" name="gender">
+                <option value="male">Мужской</option>
+                <option value="female">Женский</option>
+                <option value="other">Другой</option>
+            </select><br><br>
+
+            <label for="date">Выберите дату расклада:</label><br>
+            <input type="date" id="date" name="date"><br><br>
+
+            <label for="time">Выберите временной промежуток:</label><br>
+            <select id="time" name="time">
+                <option value="morning">Утро</option>
+                <option value="afternoon">День</option>
+                <option value="evening">Вечер</option>
+            </select><br><br>
+
+            <label for="theme">Выберите тему расклада:</label><br>
+            <select id="theme" name="theme">
+                <option value="general">Общий</option>
+                <option value="career">Карьера</option>
+                <option value="health">Здоровье</option>
+                <option value="relationships">Отношения</option>
+            </select><br><br>
+
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Сайт о Таро</p>
+    </footer>
+</body>
+</html>
