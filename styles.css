@@ -3,26 +3,32 @@ body {
     margin: 0;
     padding: 0;
     background-color: #333;
-    color:#ffffff 
+    color:#ffffff;
+    font-size: 1.5vw;
 }
 
 header {
-    background: #333;
+    background: #2c2c2c;
     color: white;
     text-align: center;
-    margin: 2vw;
+    padding: 0.3vw;
+    margin-bottom: 1vw;
 }
 
-
-
-h1, h2 {
+h1 {
     color: #ff7c7c;
+    font-size: 2.5vw;
+}
+
+h2 {
+    color: #ff7c7c;
+    font-size: 1.8vw;
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #333;
+    background: #2c2c2c;
     color: white;
     position: relative;
     bottom: 0;
@@ -35,16 +41,41 @@ main{
 }
 
 a {
-    color:#ffd7d7
+    color:#ffcdcd
 }
 
 .form-container {
-    background-color: #444; /* Цвет фона рамки */
-    border: 2px solid #ff7c7c; /* Цвет и толщина рамки */
-    border-radius: 5%; /* Закругление углов */
-    padding: 20px; /* Отступы внутри рамки */
-    margin: 20px auto; /* Центровка по вертикали и горизонтали */
-    width: 80%; /* Ширина рамки */
-    max-width: 25vw; /* Максимальная ширина */
+    background-color: #444; 
+    border: 2px solid #ff7c7c; 
+    border-radius: 20px; 
+    padding: 20px; 
+    margin: 20px auto; 
+    width: 80%;
+    max-width: 25vw; 
     min-width: 200px;
+}
+
+.block_container {
+    display: flex; 
+    flex-direction: row; 
+    align-items: stretch; 
+    background-color: #2c2c2c;
+    border-radius: 20px;
+    padding: 0.5vw;
+}
+
+.block_container p {
+    text-indent: 20px;
+    text-align: justify;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.text_block {
+    padding: 1vw;
+    background-color: #444;
+    flex: 1;
+    margin: 1vw;
+    border-radius: 20px;
+    
 }
