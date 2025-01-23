@@ -13,16 +13,36 @@ header {
     text-align: center;
     padding: 0.3vw;
     margin-bottom: 1.5vw;
+    display: flex;
+    align-items: center;
 }
 
 h1 {
     color: #ff7c7c;
     font-size: 2.5vw;
+    flex-grow: 1;
 }
 
 h2 {
     color: #ff7c7c;
     font-size: 1.8vw;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffcdcd97;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+::selection {
+    background-color: #ffcdcd97; 
+    color: #2c2c2c; 
 }
 
 footer {
@@ -41,7 +61,12 @@ main{
 }
 
 a {
-    color:#ffcdcd
+    color:#ffcdcd;
+    transition: color 0.5s;
+}
+
+a:hover {
+    color: #ff7c7c; 
 }
 
 .form-container {
@@ -84,13 +109,23 @@ a {
     background-color: #444;
     flex: 1;
     margin: 1vw;
-    border-radius: 10%;
+    border-radius: 5%;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.9s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 img {
-    max-width: 60%;
+    max-width: 20%;
     max-height: auto;
-    border-radius: 10%;
+    border-radius: 7%;
 }
 
 .block_crd_mn {
@@ -100,7 +135,10 @@ img {
     padding: 1vw;
     flex: 1;
     margin: 1vw;
-    border-radius: 10%;
+    border-radius: 5%;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.9s forwards;
 }
 
 .block_crd_mn p {
@@ -111,4 +149,36 @@ img {
 .mini_cont_crd_mn {
     display: flex;
     flex-direction: row;
+}
+
+.menu {
+    display: flex;
+    position: absolute; /* Используем абсолютное позиционирование */
+    right: 0; /* Для размещения справа */
+}
+
+.menu a {
+    background-color: #444;
+    padding: 1vw;
+    border-radius: 10%;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.2s;
+    margin: 0.5vw;
+}
+
+.menu a:hover {
+    transform: scale(1.1); 
+}
+
+.social-links {
+    display: flex; /* Flex для размещения изображений */
+    position: absolute;
+    left: 0;
+    padding: 0;
+}
+
+.social-links a img {
+    width: 10vw; 
+    
+    
 }
