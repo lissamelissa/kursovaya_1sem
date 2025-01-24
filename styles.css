@@ -254,13 +254,12 @@ input[type="submit"]:hover {
 }
 
 .container_for_form video {
-    width: 30vw; 
+    width: 27vw; 
     border-radius: 10px;
     padding-right: 5vw;
     padding-bottom: 2vw;
 }
 
-/* Стили для мобильных устройств */
 @media (max-width: 768px) {
     header h1{
         font-size: 4vw;
@@ -316,9 +315,9 @@ input[type="submit"]:hover {
 
     .container_for_form {
         flex-direction: column;
-        display: flex;         /* Включаем Flexbox */
-        justify-content: center; /* Центрируем содержимое по горизонтали */
-        align-items: center;     /* Центрируем содержимое по вертикали */
+        display: flex;         
+        justify-content: center; 
+        align-items: center;
     }
 
     .container_for_form video {
