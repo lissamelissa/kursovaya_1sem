@@ -253,12 +253,26 @@ input[type="submit"]:hover {
     }
 }
 
-/* Стили для мобильных */
+.container_for_form video {
+    width: 30vw; 
+    border-radius: 10px;
+    padding-right: 5vw;
+    padding-bottom: 2vw;
+}
+
+/* Стили для мобильных устройств */
 @media (max-width: 768px) {
     header h1{
         font-size: 4vw;
     }
   
+    main {
+        display: flex;       
+        flex-direction: column;  
+        justify-content: center; 
+        align-items: center; 
+    }
+
     .menu a{
         font-size: 2.5vw;
     }
@@ -298,6 +312,17 @@ input[type="submit"]:hover {
     .form-container input[type="submit"] {
         font-size: 3vw;
         width: 49vw;
+    }
+
+    .container_for_form {
+        flex-direction: column;
+        display: flex;         /* Включаем Flexbox */
+        justify-content: center; /* Центрируем содержимое по горизонтали */
+        align-items: center;     /* Центрируем содержимое по вертикали */
+    }
+
+    .container_for_form video {
+        width: 60vw;
     }
 
     main p {
